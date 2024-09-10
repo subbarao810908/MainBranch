@@ -6,5 +6,6 @@ Import any Classes: Ctl+Shift+O
 Open for any paticular file: Ctl+Shift+R
 Searchin any file:Ctl+H
 File has edited on Sep 19th
+-----------Comparing Local Branch and Git.==============
 
 
