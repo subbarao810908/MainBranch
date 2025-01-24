@@ -6,10 +6,10 @@ public class Main {
     System.out.println(myInt);
     System.out.println(myDouble);
 
-    int myInt2 = 9;
-    float myFloat1 = myInt; // Automatic casting: int to double
+    int intValue = 9;
+    float floatValue = myInt; // Automatic casting: int to double
 
-    System.out.println(myInt2);
-    System.out.println(myFloat1);
+    System.out.println(intValue);
+    System.out.println(floatValue);
   }
 }
