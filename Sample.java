@@ -5,5 +5,11 @@ public class Main {
 
     System.out.println(myInt);
     System.out.println(myDouble);
+
+    int myInt1 = 9;
+    float myFloat = myInt; // Automatic casting: int to double
+
+    System.out.println(myInt1);
+    System.out.println(myFloat);
   }
 }
