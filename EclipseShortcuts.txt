@@ -5,6 +5,9 @@ Format Code: Ctl+Shift+F
 Import any Classes: Ctl+Shift+O
 Open for any paticular file: Ctl+Shift+R
 Searchin any file:Ctl+H
+Word search:Ctrl+F
+This is change on Oct 19th 2023.
+This is change on Oct July 31st 2024.
 
 
 
