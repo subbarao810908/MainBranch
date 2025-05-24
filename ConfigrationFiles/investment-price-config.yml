@@ -1,0 +1,20 @@
+---
+spring:
+  profiles: test
+  datasource:
+    url: jdbc:oracle:thin:@testserver:1521:test
+---
+spring:
+  profiles: dev, default
+  datasource:
+    url: jdbc:oracle:thin:@devserver:1521:dev
+---
+spring:
+  profiles: qa
+  datasource:
+    url: jdbc:oracle:thin:@qaserver:1521:qa
+---
+spring:
+  profiles: prod
+  datasource:
+    url: jdbc:oracle:thin:@prodserver:1521:prod

@@ -1,0 +1,34 @@
+position:
+  price:
+    queue: COM.PROJECT.POSITION.PRICE.QUEUE
+  
+---
+spring:
+  profiles: test
+  
+position:
+  price:
+    notification:
+      sendTo: test@testserver.com
+
+---
+spring:
+  profiles: dev, default
+  
+position:
+    notification:
+      sendTo: dev@devserver.com
+---
+spring:
+  profiles: qa
+  
+position:
+    notification:
+      sendTo: qa@qaserver.com
+---
+spring:
+  profiles: prod
+  
+position:
+    notification:
+      sendTo: prod@prodserver.com

@@ -1,0 +1,51 @@
+spring:
+  profiles:
+    active: dev
+
+logging:
+  file:
+    max-history: 21
+
+oracle:
+  datasource:
+    username: myusername
+    password: secret
+    
+---
+spring:
+  profiles: test
+  datasource:
+    url: jdbc:oracle:thin:@testserver:1521:testservice1
+
+oracle:
+  datasource:
+    url: jdbc:oracle:thin:@testserver:1521:testservice2
+
+---
+spring:
+  profiles: dev, default
+  datasource:
+    url: jdbc:oracle:thin:@devserver:1521:devservice1
+
+oracle:
+  datasource:
+    url: jdbc:oracle:thin:@devserver:1521:devservice2
+---
+spring:
+  profiles: qa
+  datasource:
+    url: jdbc:oracle:thin:@qaserver:1521:testservice1
+
+
+oracle:
+  datasource:
+    url: jdbc:oracle:thin:@qaserver:1521:testservice2
+---
+spring:
+  profiles: prod
+  datasource:
+    url: jdbc:oracle:thin:@prodserver:1521:prodservice1
+
+oracle:
+  datasource:
+    url: jdbc:oracle:thin:@prodserver:1521:prodservice2
